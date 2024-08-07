@@ -8,18 +8,46 @@
     align-items: center
 }
 
+#containerIntro h2 {
+    display: inline;
+    vertical-align: top;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+#containerIntro h3 {
+    display: inline;
+    vertical-align: top;
+    float: right;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
 nav {
-    padding-top: 75px;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 0 auto;
     font-weight: bold;
+    border-left: 8px solid red;
+    display:block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
 }
 
 body {
     font-family: Courier New, monospace;
     color: white;
     background-color: black;
+}
+
+em {
+    font-style:normal; 
+    font-size: 24px; 
+    padding-left: 3px; 
+    padding-right: 10px; 
+    background-color: gray;
 }
 
 h1 {
@@ -30,27 +58,31 @@ h1 {
 p {
     line-height: 1.5;
     margin-bottom: 15px;
+    margin-top: -2px;
+}
+
+hr {
+    width:800px;
 }
 
 img {
-    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-width: 100%;
 }
 
 article h1+p:first-letter {
     font-size: 32px;
-  }
+}
   
-  p:nth-of-type(1):first-letter {
-    /* Initial letter occupies 2 lines and sinks 1 line */
+p:nth-of-type(1):first-letter {
     initial-letter: 2 2;
     color: white;
     content: "\00a0";
     padding-right: 5px;
-  }
+}
 
-a { color:white; text-decoration: none;} /* Globally */
-/* Each state */
-a:visited { text-decoration: none; color:white;}
-a:hover { text-decoration: none; color:blue; }
-a:focus {text-decoration:underline; color:lightgrey; }
-a:hover, a:active { text-decoration: none; color:black }
+a { color:white; text-decoration: underline; padding: 2px;}
+
+a:visited { text-decoration: none; color:lightgrey;}
+a:hover { text-decoration: none; color:white; }
+a:focus {text-decoration:none; color:white; }
+a:hover, a:active { text-decoration: none; color:lightgrey }
